@@ -4,11 +4,63 @@
 
 
 /* CSS HEX */
+--br-input: rgba(0, 0, 0, 0.08);
+--bs-blue: #0d6efd;
+--bs-indigo: #6610f2;
+--bs-purple: #6f42c1;
+--bs-pink: #d63384;
+--bs-red: #dc3545;
+--bs-orange: #fd7e14;
+--bs-yellow: #ffc107;
+--bs-green: #198754;
+--bs-teal: #20c997;
+--bs-cyan: #0dcaf0;
+--bs-white: #fff;
+--bs-gray: #575757;
+--bs-gray-dark: #0b163f;
+--bs-gray-100: #f8fafc;
+--bs-gray-200: #f8f9fa;
+--bs-gray-300: #e2e8f0;
+--bs-gray-400: #c0c0c5;
+--bs-gray-500: #94a3b8;
+--bs-gray-600: #575757;
+--bs-gray-700: #071c4d;
+--bs-gray-800: #0b163f;
+--bs-gray-900: #010e2b;
+--bs-primary: #175cff;
+--bs-accent: #077765;
+--bs-secondary: #c0c0c5;
+--bs-success: #5cc9a7;
+--bs-info: #50b5ff;
+--bs-warning: #ffb116;
+--bs-danger: #f25767;
+--bs-light: #fff;
+--bs-dark: #0b163f;
+--bs-primary-rgb: 23, 92, 255;
+--bs-accent-rgb: 7, 119, 101;
+--bs-secondary-rgb: 192, 192, 197;
+--bs-success-rgb: 92, 201, 167;
+--bs-info-rgb: 80, 181, 255;
+--bs-warning-rgb: 255, 177, 22;
+--bs-danger-rgb: 242, 87, 103;
+--bs-light-rgb: 255, 255, 255;
+--bs-dark-rgb: 11, 22, 63;
+--bs-white-rgb: 255, 255, 255;
+--bs-black-rgb: 12, 8, 0;
+--bs-body-color-rgb: 87, 87, 87;
+--bs-body-bg-rgb: 255, 255, 255;
+--bs-font-sans-serif: "Open Sans", sans-serif;
+--bs-font-monospace: "Poppins", sans-serif;
+--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 --white: #FFFFFFff;
 --dark-orchid: #9439B7ff;
 --medium-orchid: #AC66C8ff;
 --white-2: #FFFFFFff;
 --carrot-orange: #F09116ff;
+--btn-bg: #175cff;
+--icon-blue:rgba(23, 92, 255, 0.2);
+--icon-red:rgba(242, 87, 103, 0.2);
+--icon-green:rgba(92, 201, 167, 0.2);
 
 
 }
@@ -145,7 +197,7 @@ main{
 
 .btn {
 
-    background-color: #175cff;
+    background-color: var(--btn-bg);
     color:white;
     padding: 15px 30px;
     border: none;
@@ -237,7 +289,7 @@ main{
     background-image: url(img/dot-dot-wave-shape.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position:bottom;
+    background-position: center;
 
 }
 
@@ -255,6 +307,12 @@ main{
 
 }
 
+.title-section h3{
+
+    font-size: 30px;
+    color: #0B316F;
+}
+
 .title-section span{
 
     color: #0B316F;
@@ -263,7 +321,7 @@ main{
 
 .title-section p{
 
-    width: 1200px;
+    width: 600px;
     text-align: center;
 }
 
@@ -275,11 +333,9 @@ main{
     background-repeat: no-repeat;*/
     padding: 70px 0px 0px 70px;
     
-    
-
-
    
 }
+
 .card{
 
     width: 400px;
@@ -295,8 +351,6 @@ main{
 
 }
 
-
-
 .card p{
 
     text-align: center;
@@ -306,20 +360,20 @@ main{
 
     width: 60px;
     height: 60px;
-    background-color: rgba(23, 92, 255, 0.2);
+    background-color:var(--icon-blue);
     border-radius: 3rem;
     opacity: 1;
 }
 
 .card:nth-of-type(2) .icon{
 
-    background-color: rgba(242, 87, 103, 0.2);
+    background-color: var(--icon-red);
     
 }
 
 .card:nth-of-type(3) .icon{
 
-    background-color: rgba(92, 201, 167, 0.2);
+    background-color: var(--icon-green);
 }
 
 .card span{
@@ -337,3 +391,196 @@ main{
     width: 300px;
 }
 
+
+/* CONTACT */
+
+#contact{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    
+}
+
+/* CONTACT */ /* CONTACT COLUMNS */
+
+#contact .contact-info{
+
+    width: 500px;
+    padding: 25px;
+    
+
+}
+
+.contact-columns{
+
+    display: flex;
+    gap: 20px;
+    
+    
+}
+
+.contact-columns .contact-telefono, .contact-columns .contact-chat{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+.contact-columns .contact-telefono .contact-icon{
+
+    width: 60px;
+    height: 60px;
+    background-color:var(--icon-blue);
+    border-radius: 3rem;
+    opacity: 1;
+
+}
+
+
+.contact-columns .contact-chat .contact-icon{
+
+    width: 60px;
+    height: 60px;
+    background-color: var(--icon-red);
+    border-radius: 3rem;
+    opacity: 1;
+    
+}
+
+/* CONTACT */ /* CONTACT INFO */
+
+#contact .contact-info{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact .contact-info span{
+
+    
+    color:#175cff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#contact .contact-info h2{
+
+    color: #0B316F;
+}
+
+/*  CONTACT */ /* CONTACT FORM */
+
+#contact .contact-form{
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 550px;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgb(12 8 0 / 3%), 0 0.275rem 1.25rem -0.0625rem rgb(12 8 0 / 5%);
+    border-radius:1rem;
+    padding: 25px;
+    
+    
+}
+
+#contact .contact-form .contact-form-title h3{
+
+    font-size: 22px;
+}
+
+#contact .contact-form form{
+
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    
+}
+
+#contact .contact-form form input{
+
+    width: 220px;
+    height: 50px;
+    border: 2px solid var(--br-input);
+    border-radius: 5px;
+    margin: 0px 25px 0px 25px;
+    font-family: poppins;
+
+}
+
+
+#contact .contact-form form input[type=checkbox]{
+
+    width: unset;
+    height: unset;
+    border: 2px solid var(--br-input);
+    border-radius: 5px;
+}
+
+#contact .contact-form form label{
+
+    font-size: 14px;
+    color: #575757;
+    
+}
+
+#contact .contact-form form label a{
+
+    color: var(--bs-blue);
+    
+}
+
+
+#contact .contact-form form select{
+
+    width: 220px;
+    height: 50px;
+    border: 2px solid var(--br-input);
+    border-radius: 5px;
+    margin: 0px 25px 0px 25px;
+    font-family: poppins;
+}
+
+
+#contact .contact-form form textarea{
+
+    width: 500px;
+    height: 150px;
+    border: 2px solid var(--br-input);
+    border-radius: 5px;
+    margin: 0px 25px 0px 25px;
+    font-size: 14px;
+    font-family: poppins;
+}
+
+#contact .contact-form button{
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #175cff;
+    border-color: #175cff;
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    align-self: center;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-image: url(img/dot-dot-wave-shape.svg) no-repeat center top;
+    background: var(--bs-dark);
+    height: 100px;
+    width: 100%;
+}
