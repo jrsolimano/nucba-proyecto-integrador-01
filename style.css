@@ -92,6 +92,8 @@ header {
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    position: fixed;
+    top: 0;
     
 
 }
