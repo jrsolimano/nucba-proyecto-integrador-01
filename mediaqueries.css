@@ -3,62 +3,62 @@
 @media (max-width:992px) {
 
     /* HERO */
-    
-    .hero{
+
+    .hero {
 
         flex-direction: column-reverse;
         text-align: center;
         padding-bottom: 100px;
-        
-        
+
+
     }
 
-    .hero .hero-txt{
+    .hero .hero-txt {
 
         width: 750px;
         gap: 20px;
         align-items: center;
     }
 
-    .hero .hero-img{
+    .hero .hero-img {
 
         align-items: center;
     }
 
-    .hero h1{
-        
+    .hero h1 {
+
         width: 750px;
     }
 
-    .hero img{
+    .hero img {
 
         max-width: 650px;
-        
-        
+
+
     }
 
     /* ABOUT US */
 
-    .company-info{
+    .company-info {
 
         text-align: center;
 
     }
-    
 
-    .company-info q{
+
+    .company-info q {
 
         font-size: 35px;
     }
 
-    .company-info p{
+    .company-info p {
 
         max-width: 800px;
     }
 
     /* SKILLS */
 
-    #skills{
+    #skills {
 
         margin-bottom: 0px;
     }
@@ -66,14 +66,14 @@
 
     /* CARDS */
 
-    .cards{
+    .cards {
 
-       max-width: 900px;
-       flex-wrap: wrap;
-       gap: 20px;
+        max-width: 900px;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
-    #contact{
+    #contact {
 
         flex-direction: column;
         background-image: unset;
@@ -81,34 +81,169 @@
         text-align: center;
     }
 
-    .contact-columns .contact-telefono, .contact-columns .contact-chat{
+    .contact-columns .contact-telefono,
+    .contact-columns .contact-chat {
 
         align-items: center;
     }
 
-    #contact .contact-form{
+    #contact .contact-form {
 
         width: 750px;
     }
 
-    #contact .contact-form form{
+    #contact .contact-form form {
 
         width: 750px;
     }
 
-    #contact .contact-form form input{
+    #contact .contact-form form input {
 
         width: 320px;
     }
 
-    #contact .contact-form form select{
+    #contact .contact-form form select {
 
         width: 320px;
 
     }
 
-    #contact .contact-form form textarea{
+    #contact .contact-form form textarea {
 
         width: 750px;
+    }
+
+}
+
+
+/* Estilos para celulares*/
+
+@media (max-width: 576px) {
+
+    header{
+
+        flex-direction: column;
+        position: unset;
+        top: unset;
+    
+    }
+
+    .site-menu nav ul {
+
+        max-width: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* HERO */
+
+    .hero {
+
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 100px;
+        gap: 20px;
+
+
+    }
+
+    .hero .hero-txt {
+
+        width: 450px;
+        gap: 20px;
+        align-items: center;
+
+    }
+
+    .hero .hero-img {
+
+        display: none;
+        align-items: center;
+    }
+
+    .hero h1 {
+
+        width: 500px;
+        font-size: 34px;
+    }
+
+    /* COMPANY INFO */
+
+    .company-info P {
+
+        width: 450px;
+    }
+
+    .title-section p{
+
+        width: 400px;
+    }
+
+
+    /* CARDS */
+
+    .card {
+
+        width: 500px;
+    }
+
+    .card p {
+
+        font-size: 18px;
+    }
+
+    /* CONTACT */
+
+    #contact .contact-form {
+
+        width: 550px;
+    }
+
+    #contact .contact-form form {
+
+        width: 550px;
+    }
+
+    #contact .contact-form form input {
+
+        width: 220px;
+    }
+
+    #contact .contact-form form select {
+
+        width: 220px;
+
+    }
+
+    #contact .contact-form form textarea {
+
+        width: 500px;
+    }
+
+    /* FOOTER */
+
+    footer .columns{
+
+        flex-direction: column;
+        align-items: unset;
+        margin-left: 20px;
+    }
+
+    footer .copyright-social-media{
+
+        flex-direction: column;
+        align-items: center;
+        gap:10px
+    }
+
+    footer .columns:nth-of-type(1) input{
+
+        width: 400px;
+
+    }
+
+    footer .columns:nth-of-type(1) p{
+
+        width: 400px;
     }
 }

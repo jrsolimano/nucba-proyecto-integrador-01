@@ -420,7 +420,7 @@ main{
     background-position: right top, left top, bottom center;
     background-repeat: no-repeat;
     
-    
+
 }
 
 /* CONTACT */ /* CONTACT COLUMNS */
@@ -619,7 +619,6 @@ footer{
     flex-direction: column;
     padding-bottom: 20px;
     background-image: url(img/dot-dot-wave-shape.svg);
-    
     background-repeat: no-repeat;
     background-position: center center;
 }
