@@ -1,0 +1,114 @@
+/* Estilos para tablets */
+
+@media (max-width:992px) {
+
+    /* HERO */
+    
+    .hero{
+
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-bottom: 100px;
+        
+        
+    }
+
+    .hero .hero-txt{
+
+        width: 750px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero .hero-img{
+
+        align-items: center;
+    }
+
+    .hero h1{
+        
+        width: 750px;
+    }
+
+    .hero img{
+
+        max-width: 650px;
+        
+        
+    }
+
+    /* ABOUT US */
+
+    .company-info{
+
+        text-align: center;
+
+    }
+    
+
+    .company-info q{
+
+        font-size: 35px;
+    }
+
+    .company-info p{
+
+        max-width: 800px;
+    }
+
+    /* SKILLS */
+
+    #skills{
+
+        margin-bottom: 0px;
+    }
+
+
+    /* CARDS */
+
+    .cards{
+
+       max-width: 900px;
+       flex-wrap: wrap;
+       gap: 20px;
+    }
+
+    #contact{
+
+        flex-direction: column;
+        background-image: unset;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-columns .contact-telefono, .contact-columns .contact-chat{
+
+        align-items: center;
+    }
+
+    #contact .contact-form{
+
+        width: 750px;
+    }
+
+    #contact .contact-form form{
+
+        width: 750px;
+    }
+
+    #contact .contact-form form input{
+
+        width: 320px;
+    }
+
+    #contact .contact-form form select{
+
+        width: 320px;
+
+    }
+
+    #contact .contact-form form textarea{
+
+        width: 750px;
+    }
+}

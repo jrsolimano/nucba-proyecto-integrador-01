@@ -140,7 +140,7 @@ main{
    
     display: flex;
     justify-content: center;
-    height: 500px;
+    /*height: 500px;*/
     align-items: center;
     background-image: url("img/dot-dot-wave-shape.svg");
     background-size: contain;
@@ -161,7 +161,7 @@ main{
 
 .hero-txt {
 
-    max-width: 500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -419,9 +419,6 @@ main{
     background-image: url('img/image-1.svg'), url('img/image-3.svg'), url('img/image-2.svg');
     background-position: right top, left top, bottom center;
     background-repeat: no-repeat;
-    
-    
-   
     
     
 }
